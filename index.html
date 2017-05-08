@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS -->
+<link rel="stylesheet" href="css/tema_app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Fuertes-de-Loreto-y-Guadalupe-03.jpg','imagenes/2017.jpg','imagenes/telegrama.png')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Batalla de Puebla</h1>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/batalla.jpg" alt="Batalla" title="Batalla" id="wows1_0"/></li>
+		<li><img src="data1/images/mapa.jpg" alt="mapa" title="mapa" id="wows1_1"/></li>
+		<li><img src="data1/images/fuertesdeloretoyguadalupe.jpg" alt="Fuertes-de-Loreto-y-Guadalupe" title="Fuertes-de-Loreto-y-Guadalupe" id="wows1_2"/></li>
+		<li><img src="data1/images/toms_ohoran.jpg" alt="Tomás_OHoran" title="Tomás_OHoran" id="wows1_3"/></li>
+		<li><img src="data1/images/benito_juarez.jpg" alt="Benito_Juarez" title="Benito_Juarez" id="wows1_4"/></li>
+		<li><img src="data1/images/ignacio_zaragoza.png" alt="Ignacio_Zaragoza" title="Ignacio_Zaragoza" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/miguel_negrete.jpg" alt="wowslider.com" title="Miguel_Negrete" id="wows1_6"/></a></li>
+		<li><img src="data1/images/conmemoracion.jpg" alt="Conmemoracion" title="Conmemoracion" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Batalla"><span><img src="data1/tooltips/batalla.jpg" alt="Batalla"/>1</span></a>
+		<a href="#" title="mapa"><span><img src="data1/tooltips/mapa.jpg" alt="mapa"/>2</span></a>
+		<a href="#" title="Fuertes-de-Loreto-y-Guadalupe"><span><img src="data1/tooltips/fuertesdeloretoyguadalupe.jpg" alt="Fuertes-de-Loreto-y-Guadalupe"/>3</span></a>
+		<a href="#" title="Tomás_OHoran"><span><img src="data1/tooltips/toms_ohoran.jpg" alt="Tomás_OHoran"/>4</span></a>
+		<a href="#" title="Benito_Juarez"><span><img src="data1/tooltips/benito_juarez.jpg" alt="Benito_Juarez"/>5</span></a>
+		<a href="#" title="Ignacio_Zaragoza"><span><img src="data1/tooltips/ignacio_zaragoza.png" alt="Ignacio_Zaragoza"/>6</span></a>
+		<a href="#" title="Miguel_Negrete"><span><img src="data1/tooltips/miguel_negrete.jpg" alt="Miguel_Negrete"/>7</span></a>
+		<a href="#" title="Conmemoracion"><span><img src="data1/tooltips/conmemoracion.jpg" alt="Conmemoracion"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div data-role="main" class="ui-content">
+</div>
+<div>
+<ul data-role="listview" dta-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-lst-child">
+<a href="#Pagina1" clss="ui-btn-icon-right ui-icon-carat-r">
+<h2>Antecedentes</h2>
+<p>¿Que llevo al conflicto?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Batalla del 4 de Mayo</h2>
+<p>La batalla de Atlixco</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Batalla del 5 de Mayo</h2>
+<p>La balla de Puebla</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Acontecimientos posteriores</h2>
+<p>¿Que ocurrio despues de la batalla?</p>
+</a>
+</li>
+<li class="ui.first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Monumentos y museos</h2>
+<p>Visita y conoce los monumentos y museos de esta batalla</p>
+</a>
+</li>
+</ul>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/Fuertes-de-Loreto-y-Guadalupe-03.jpg',1)"><img src="imagenes/Fuertes-de-Loreto-y-Guadalupe.jpg" width="640" height="364" id="Image30"></a>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/2017.jpg',1)"><img src="imagenes/1862.jpg" width="640" height="364" id="Image31"></a>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Seis</h4>
+<h4>Luis Fernando Hernandez Sanchez</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Antecedentes</h1>
+
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México ya que este tenía una gran deuda de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.</h2>
+<h2>La alianza tripartita amenazó al presidente Benito Juarez con una invasión inminente si no se saldaba por completo las deudas que México tenía con los tres países europeos. Juarez responde con un exhorto para  lograr un arreglo amistoso, y los invitó a conferenciar. Sin embargo, sabía que había una guerra inminente y trató de proteger la Ciudad de México trasladando pertrechos y  ordenó la fortificación de Puebla. Creo al Ejército de Oriente y el hombre que se designó en el mando fue el general Ignacio Zaragoza.</h2>
+<img src="imagenes/Benito_Juarez.jpg" width="250" height="355" alt="Benito_Juarez"> 
+<img src="imagenes/Ignacio_Zaragoza.png" width="326" height="357" alt="Zaragoza"> 
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion seis, LFHS</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-bck-btn-theme="a">
+<h1>Batalla de Atlixco</h1>
+</div>
+<div dta-role="content" align="center">
+<div>
+<h2>La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.</h2>
+<h2>Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</h2>
+<img src="imagenes/Tomás_OHoran.jpg" width="220" height="288" alt="ohoran"> 
+</div>
+</div>
+<div data-role="footer" dta-theme="a" data-position="fixed">
+<h4>Apliccion seis, LFHS</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Batalla de Puebla</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo para cruzar la Sierra Madre Oriental y dirigirse hacia Puebla ya que era paso obligado para llegar a la capital del país.</h2>
+      <h2>Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por Porfirio Díaz. </h2>
+    <img src="imagenes/Porfirio_Diaz.jpg" width="300" height="408" alt="Porfirio_Diaz"> 
+    <h2>El centro de la línea lo defendió Francisco Lamadrid con las tropas del Estado de México y San Luis Potosí.</h2>
+    <img src="imagenes/Francisco_Lamadrid.jpg" width="480" height="640" alt="Frncisco_Lamadrid"> 
+    <h2>La izquierda se apoyó en el cerro de Acueyametepec ubicado en el norte de la ciudad y en cuya cumbre se ubicaban los Fuertes de Loreto y Guadalupe, con el general Miguel Negrete a la cabeza de la Segunda División de Infantería.</h2>
+    <img src="imagenes/Miguel_Negrete.jpg" width="460" height="613" alt="Miguel_Negrete"> 
+    <img src="imagenes/Fuertes-de-Loreto-y-Guadalupe.jpg" width="640" height="364" alt="Loreto_Y_Guadalupe"> 
+    <h2>El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.</h2>
+    <h2>Finalmente, a las 5:49 de la tarde, Zaragoza anuncia la victoria:
+
+Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoza</h2>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/telegrama.png',1)"><img src="imagenes/batalla2.jpg" width="640" height="364" id="Image32"></a>
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+      <a href="https://webadictos.com/2017/05/04/historia-de-la-batalla-de-puebla-5-mayo/" data-role="button">
+      <h2>Historia completa</h2>
+      </a>
+    </li>
+</ul>
+
+    </div>
+</div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Aplicacion seis, LFHS</h4>
+    </div>
+    </div>
+    
+    
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Acontecimientos posteriores</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>A pesar de que La Batalla de Puebla no impidió la invasión de Francia posteriormente, el impacto causado por la primera, y la redición total durante la invasión posterior, ha hecho que México celebre el 5 de mayo, todos los años, como una fiesta nacional donde se conmemoran los hechos de la batalla y la victoria de Zaragoza en los campos de batalla en la Ciudad de Puebla. Luego de la batalla los combatientes fueron condecorados por haberse cubierto de gloria.</h2>
+        <img src="imagenes/Conmemoracion.jpg" width="900" height="520" alt="Conmemoracion"> 
+        </div>
+</div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>Aplicacion seis, LFHS</h4>
+    </div>
+    </div>
+    
+    
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Museos y Monumentos</h1>
+    </div>
+    <div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Museos</h1>
+<div>
+<br>
+<h2>Museo interactivo de la batalla del 5 de Mayo.</h2>
+</div>
+<div>
+<img src="imagenes/museo2.jpg" width="70%" height="70%"></div>
+<p>Una de las más grandes batallas que ha librado el país tuvo lugar en la ciudad de Puebla, la batalla del 5 de mayo de 1862. En la zona de los fuertes, en el mismo escenario del pasado, se ubica el museo interactivo.
+El recorrido por el museo utiliza la tecnología más puntera para narrar las acciones militares y la biografía de héroes nacionales como Negrete, Díaz y Zaragoza. Pantallas táctiles, proyecciones en 3-D y contenidos interactivos descargables en dispositivos ofrecen una experiencia única al visitante.</p>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" data-role="button">
+      <h2>Pagina del museo</h2>
+      </a>
+    </li>
+  </ul>
+
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Monumentos</h1>
+<div>
+<br>
+<h2>Monumento a Ignacio Zaragoza</h2>
+</div>
+<div>
+<img src="imagenes/monumentozaragoza2.jpg" width="70%" height="70%"></div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://www.google.com.mx/maps/dir/Atlixco,+Puebla/''/@19.0225738,-98.3681376,12z/data=!4m13!4m12!1m5!1m1!1s0x85cfb3eee015f935:0x5c4b12a3f9f700e7!2m2!1d-98.4293891!2d18.9131227!1m5!1m1!1s0x85cfc1040a9857f3:0x9574212b7a7becde!2m2!1d-98.1846438!2d19.0604542" data-role="button">
+      <h2>Ubicacion</h2>
+      </a>
+    </li>
+  </ul>
+<br>
+<h2>Monumento a La Victoria del 5 de Mayo</h2>
+<div>
+<img src="imagenes/victoria.jpg" width="70%" height="70%"></div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://www.google.com.mx/maps/dir/Atlixco,+Puebla/''/@19.0227361,-98.3681377,12z/data=!4m13!4m12!1m5!1m1!1s0x85cfb3eee015f935:0x5c4b12a3f9f700e7!2m2!1d-98.4293891!2d18.9131227!1m5!1m1!1s0x85cfc101d96c9a03:0xfd34fd497bfcabf6!2m2!1d-98.1817586!2d19.0536943" data-role="button">
+      <h2>Ubicacion</h2>
+      </a>
+    </li>
+  </ul>
+<br>
+<h2>Monumento a Los Heroes del 5 de Mayo</h2>
+<div>
+<img src="imagenes/mheroes.jpg" width="70%" height="70%"></div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://www.google.com.mx/maps/dir/Atlixco,+Puebla/''/@18.9810214,-98.38049,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x85cfb3eee015f935:0x5c4b12a3f9f700e7!2m2!1d-98.4293891!2d18.9131227!1m5!1m1!1s0x85cfc0ef4ca3f0a5:0xc11fb8d9aa5db8d6!2m2!1d-98.1938954!2d19.0405555" data-role="button">
+      <h2>Ubicacion</h2>
+      </a>
+    </li>
+  </ul>
+
+</div>
+    
+</body>
+</html>
